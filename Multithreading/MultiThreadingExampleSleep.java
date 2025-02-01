@@ -18,7 +18,7 @@ class BackgroundMusicThread extends Thread {
     }
 }
 
-public class MultiThreadingExample {
+public class MultiThreadingExampleSleep {
     public static void main(String[] args) {
         SingingThread singer = new SingingThread();
         BackgroundMusicThread music = new BackgroundMusicThread();
