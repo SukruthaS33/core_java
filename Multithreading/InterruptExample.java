@@ -18,17 +18,21 @@ public class InterruptExample {
 class Tom extends Thread {
 
     BullDog bd = null;
+    boolean bangsTheWall = true;
     
     @Override
     public void run() {
         try {
             // Wait for a moment before Tom interrupts Bulldog (simulate Tom running)
             Thread.sleep(2000);  // Wait for 2 seconds
-
-            System.out.println("Tom disturbs the perfectly asleep bull dog!: " + bd);
+            
+            System.out.println("Tom hit " + bd);
             
             // Tom interrupts Bulldog after waiting for 2 seconds
-            bd.interrupt();
+            if(bangsTheWall) {
+            	 bd.interrupt();
+            }
+           
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
