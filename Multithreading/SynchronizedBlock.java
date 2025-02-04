@@ -46,9 +46,10 @@ class Student extends Thread {
 		System.out.println("show required documents");
 		System.out.println("asking permission with security");
 		System.out.println("sit in the waiting lounge");
-		System.out.println("Get the chance===================");
+		
 		// synchronized (p) {
 		if (!p.isPriciTalking()) {
+			System.out.println("Get the chance===================");
 			System.out.println(p.isPriciTalking());
 			System.out.println("Hi ma'am");
 			p.talk(stu, leaveCount);
