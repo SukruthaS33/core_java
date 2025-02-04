@@ -1,5 +1,5 @@
 package Corejavarefresher.multithreading;
-
+//we don't care about leaveCount here for this example what is important is isPrinicpalTalking
 public class SynchronizedBlock {
 
 	public static void main(String[] args) {
