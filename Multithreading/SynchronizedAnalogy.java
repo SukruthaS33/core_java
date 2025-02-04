@@ -1,5 +1,5 @@
 package multithreading.Synchronization;
-
+//mutliple students asking a question to the teacher at once
 public class SynchronizedAnalogy {
     public static void main(String[] args) {
         ClassTeacher t = new ClassTeacher("Gary");
